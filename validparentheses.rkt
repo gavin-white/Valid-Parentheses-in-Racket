@@ -31,7 +31,7 @@
   (or (string=? str ")") (string=? str "]") (string=? str "}")))
 
 ;; match? : String -> Boolean
-;; Determines a given string _str2_ is the closing parentheses that matches with the open parentheses _str1_.
+;; Determines whether a given string _str2_ is the closing parentheses that matches with the open parentheses _str1_.
 (define (match? str1 str2)
   (cond
     [(string=? str1 "(") (string=? str2 ")")]
